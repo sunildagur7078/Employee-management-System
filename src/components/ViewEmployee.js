@@ -19,7 +19,6 @@ const ViewEmployee = () => {
         return response.json();
       })
       .then(data => {
-        // Assume data.data contains the employee list
         const firstTenEmployees = data.data.slice(0, 10);
         setEmployees(firstTenEmployees);
         setLoading(false);
